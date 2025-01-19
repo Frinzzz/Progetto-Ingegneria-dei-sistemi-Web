@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Film</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Vue.js will render components here -->
+        <navbar></navbar>
+        <main>
+            <router-view></router-view>
+        </main>
+        <footer>
+            <p>&copy; 2024 Streaming Film. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+
+    <!-- Include Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="/app.js" type="module"></script>
+</body>
+</html>
