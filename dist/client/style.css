@@ -1,0 +1,59 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #171515;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav input[type=\"text\"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.carousel, .categories {
+    padding: 20px;
+}
+
+.carousel h2, .categories h2 {
+    margin-bottom: 10px;
+}
+
+.movie-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.movie-item img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
