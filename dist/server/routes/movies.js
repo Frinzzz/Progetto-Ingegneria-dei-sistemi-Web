@@ -67,19 +67,6 @@ router.post('/add', upload.single('movie'), async (req, res) => {
 });
 
 
-
-
-// Ottieni tutti i film
-router.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const movies = yield Movie_1.default.find();
-        res.json(movies);
-    } catch (error) {
-        res.status(500).json({ error: 'Errore nel recupero dei film' });
-    }
-}));
-
-
 // Ottieni film in evidenza 
 router.get('/featured', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -319,10 +306,6 @@ router.get("/:movieId/reviews", async (req, res) => {
       res.status(500).json({ error: "Errore durante il recupero delle recensioni." });
   }
 });
-
-
-
-
 
 router.get("/slug/:titleSlug", async (req, res) => {
   try {
